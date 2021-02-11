@@ -1,0 +1,218 @@
+
+
+/* 1.Incase there are multiple css rules for same tag then the last rule will be followed i.e. the rule which is at last will be styled */
+/* 2.Inline css selector gets higher preference than the id selector then class selector and class selector gets more preference than type selector */
+/* 3.1px=(1/96)inch */
+/* 4.vh=viewport height that means the screen if we specify vh as 100 it will take the whole screen. same is vw which is viewport width */
+/* 5.we can make any element inline or any element block by display property eg: display:inline or display:block if we are making a block element line then it height and width property does not work since inline elements have there own height and width so 
+here we can use inline-block property which gives us the functions of block element */
+
+@import url(https://weloveiconfonts.com/api/?family=zocial);
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+  }
+
+#food{
+    text-transform: uppercase;
+    color:rgb(145, 12, 12);
+    font-size:40px;
+    font-weight:900;
+    border-left:5px solid rebeccapurple;
+    border-bottom:4px solid rebeccapurple;
+    padding:8px;
+    margin:3px;
+    box-shadow: 4px 4px 6px 6px rgb(235, 130, 151);
+   
+}
+.by
+{
+    font-size:20px;
+    font-family:cursive;
+    display:block;
+    margin-left:450px;
+}
+.subheading
+{
+    font-size:40px;
+    font-family:Helvetica;
+    color:black;
+    border-left: 5px solid orange;
+    padding-left: 8px;
+    text-transform: uppercase;
+    font-weight:700;
+}
+
+/* nested css -> first it will search for ordered list and then for list */
+
+ol li{
+    color:indigo;
+    font-size:20px;
+    font-family:cursive;
+}
+.fruit
+{
+    font-size:20px;
+    color:rgb(68, 27, 53);
+    font-weight: 700;
+}
+
+/* colour of this tag will change after hovering */
+#food:hover{
+    color:royalblue;
+}
+.reason
+{
+    font-size:25px;
+}
+
+.color
+{
+    background-color:slategray ;
+}
+
+/* Adding styling to a specific div which styling is different fr0m other elements in the block page */
+.div1
+{
+    height:1000px;
+    width:600px;
+    margin-left:40px;
+    display:inline-block;
+    margin-bottom:4px;
+}
+
+.div2
+{
+    height:1000px;
+    width:600px;
+    margin-left:100px;
+    display:inline-block;
+    margin-bottom:4px;
+}
+.div3
+{
+    height:500px;
+    width:500px;
+    margin-left:40px;
+    display:inline-block;
+    margin-bottom: 30px;
+}
+.div4
+{
+    height:200px;
+    width:700px;
+    margin-left:40px;
+    display:inline-block;
+    margin-bottom: 30px;
+}
+.div4 p{
+    
+    font-size:20px;
+    line-height:30px;
+    color:rgb(68, 27, 53);
+}
+.image-momos
+{
+    height:600px;
+    width:600px;
+    margin:4px;
+    border:4px solid black;
+    padding:4px;
+    box-shadow: 4px 4px 6px 6px rgb(235, 130, 151);
+}
+.image-pizza
+{
+    height:600px;
+    width:600px;
+    margin:4px;
+    border:4px solid black;
+    padding:4px;
+    box-shadow: 4px 4px 6px 6px rgb(212, 117, 136);
+}
+
+.image-pasta
+{
+    height:400px;
+    width:400px;
+    margin:2px;
+    border: 4px solid black;
+    padding:3px;
+    box-shadow: 4px 4px 6px 6px rgb(223, 119, 139);
+}
+.div2 p{
+    font-weight:400;
+    line-height: 20px;
+    color:indigo;
+    font-size:18px;
+    font-family:cursive;
+    line-height: 32px;
+}
+.border
+{
+    border-width:3px;
+    border-style:solid;
+    border-color:mediumvioletred;
+
+    /* adding curve edges to border */
+    border-radius:4px;
+    /* if we want only a single border or just left or right border then we can do that */
+    /* border-left: 4px solid blue; */
+
+    /* Adding margin */
+    /* margin:10px 10px 10px 10px; */
+
+    /* margin:auto;sets image to centre; */
+    /* margin:10px;*/
+} 
+
+ul li{
+    font-weight:400;
+    line-height: 20px;
+    color:indigo;
+    font-size:18px;
+    font-family:cursive;
+    line-height: 25px;
+    
+}
+
+header{
+    margin-left:400px;
+}
+header img{
+    display:inline-block;
+    height:80px;
+    width:80px;
+    margin-left:2px;
+    margin-right: 2px;
+    margin-top:30px;
+}
+
+header h1{
+    display:inline-block;
+}
+
+.span1
+{
+    margin-left:30px;
+}
+
+.image-fruit
+{
+    height:300px;
+    width:400px;
+    margin:20px;
+    border:5px solid black;
+    padding:2px;
+    box-shadow: 4px 4px 6px 6px rgb(221, 137, 154);
+}
+
+section{
+    height:200px;
+    width:300px;
+    margin-top:30px;
+    margin-left:700px;
+}
+section span{
+    font-size:20px;
+}
+
